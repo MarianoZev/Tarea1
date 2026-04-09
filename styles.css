@@ -19,16 +19,6 @@ body {
     z-index: -1;
 }
 
-.video-background iframe {
-    width: 100vw;
-    height: 56.25vw; /* Relación 16:9 */
-    min-height: 100vh;
-    min-width: 177.77vh; /* Relación 16:9 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* Navegación */
 .navbar {
