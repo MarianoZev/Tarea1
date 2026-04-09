@@ -143,15 +143,7 @@ body {
     text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
 }
 
-.container-ensayo {
-    max-width: 750px;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px); /* Cristal esmerilado */
-    padding: 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 
 .pregunta-caja {
     background: rgba(0, 0, 0, 0.4);
