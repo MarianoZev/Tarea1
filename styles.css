@@ -62,6 +62,69 @@ body {
     transform: scale(1.1); /* Crece un poquito al pasar el mouse */
 }
 
+.main-content-grid {
+    display: grid;
+    /* Cambiamos las proporciones: 
+       Preguntas (2fr), Logros (1fr), Foto (1.5fr) 
+       Esto hace que la columna de la foto sea más ancha que la del medio */
+    grid-template-columns: 2fr 1.2fr 1.8fr; 
+    
+    gap: 40px;           /* Más espacio entre columnas para que respire */
+    max-width: 1800px;   /* Aumentamos de 1500px a 1800px */
+    width: 96%;          /* Margen pequeño a los lados */
+    margin: 0 auto;
+    pointer-events: auto;
+}
+
+/* Mismo estilo para los tres contenedores */
+.container-ensayo, .container-premios, .container-foto {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: fit-content;
+}
+
+.container-foto {
+    padding: 30px; /* Más aire interno para que la caja se vea más grande */
+}
+
+.foto-director {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ffcc00; /* Borde un poco más grueso */
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.3); /* Brillo sutil */
+}
+
+/* Responsivo para que no se vea mal en pantallas pequeñas */
+@media (max-width: 1200px) {
+    .main-content-grid {
+        grid-template-columns: 1fr 1fr; /* Pasa a 2 columnas */
+    }
+    .container-foto {
+        grid-column: span 2; /* La foto ocupa el ancho total abajo */
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content-grid {
+        grid-template-columns: 1fr; /* Todo en una sola columna */
+    }
+    .container-foto { grid-column: span 1; }
+}
+
+
+
+
+/* Ajuste para celulares: una sola columna */
+@media (max-width: 900px) {
+    .main-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Estructura del contenido (Página 2) */
 .wrapper {
     position: relative; 
