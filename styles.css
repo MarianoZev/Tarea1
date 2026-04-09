@@ -31,7 +31,7 @@ body {
     width: auto;          /* No ocupa todo el ancho */
     min-width: 300px;     /* Ancho mínimo para que no se vea muy pequeño */
     padding: 15px 40px;   /* Espacio interno */
-    background: rgba(81, 32, 32, 0.7); /* Color oscuro con transparencia */
+    background: rgba(246, 3, 3, 0.7); /* Color oscuro con transparencia */
     backdrop-filter: blur(10px);    /* Efecto de cristal */
     display: flex;
     justify-content: center; 
